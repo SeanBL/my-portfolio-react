@@ -1,0 +1,12 @@
+.navbar {
+    height: 60px;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 5px 15px 5px; 
+}
+
+.navItems {
+    font-size: 30px;
+    align-content: center;
+    align-items: center;
+}
