@@ -1,11 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react';
-import HelloReact from './components/HelloReact';
-import Header from './components/header';
+import { createBrowserRouter, RouterProvider, Route, Routes, BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import Projects from './components/Projects';
+import Resume from './components/Resume';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
-function App() {
-  return <Header />;
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <div className='background'>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<AboutMe />}/>
+            <Route path="projects" element={<Projects />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="resume" element={<Resume />} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App;

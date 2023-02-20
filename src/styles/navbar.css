@@ -1,7 +1,7 @@
 .navbar {
     height: 60px;
-    background: rgb(0, 0, 0);
-    color: white;
+    background: transparent;
+    color: rgb(212, 54, 54);
     padding: 15px 5px 15px 5px; 
 }
 
