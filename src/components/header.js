@@ -5,52 +5,35 @@ import Projects from "./Projects";
 import Resume from "./Resume";
 import Contact from "./Contact";
 import { Link } from 'react-router-dom';
+import '../styles/header.css'
 
 export default function Header() {
-    // const [activeItem, setActiveItem] = useState('AboutMe');
-    // useEffect(() => {
-    //     const query = getQuerry();
-    //     if (query.items) {
-    //         setActiveItem(query.items);
-    //     }
-    // }, []);
-    
     return (
         <header>
-            <Link to='/'>About Me</Link>
+            {/* <Link to='/'>About Me</Link>
             <Link to='projects'>Projects</Link>
             <Link to='contact'>Contact</Link>
-            <Link to='resume'>Resume</Link>
+            <Link to='resume'>Resume</Link> */}
 
-
-            {/* <Navbar items = {[ 
+            <Navbar items = {[ 
                 {
                     id: "aboutMe",
-                    item: "AboutMe",
-                    content: <AboutMe />,
+                    item: <Link to='/'>About Me</Link>, 
                 },
                 {
                     id: "projects",
-                    item: "Projects",
-                    content: <Projects />,
+                    item: <Link to='projects'>Projects</Link>,   
                 },
                 {
                     id: "contact",
-                    item: "Contact",
-                    content: <Contact />,
+                    item: <Link to='contact'>Contact</Link>,    
                 },
                 {
                     id: "resume",
-                    item: "Resume",
-                    content: <Resume />,
+                    item: <Link to='resume'>Resume</Link>,
                 }
             ]}
-            activeItem={activeItem}
-            changeItem={(newItem) => {
-                setActiveItem(newItem);
-                setQueryValue("item", newItem)
-            }}
-            /> */}
+            />
         </header>    
     )
 };

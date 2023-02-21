@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
             <Route path="resume" element={<Resume />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

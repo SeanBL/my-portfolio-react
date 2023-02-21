@@ -38,5 +38,6 @@
 } */
 
 .background {
-  background-color: rgb(151, 121, 121);
+  background-color: black;
+  height: 100vh;
 }
