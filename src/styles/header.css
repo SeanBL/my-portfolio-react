@@ -1,4 +1,7 @@
-.aboutLink {
-    width: 20vw;
-    aspect-ratio: auto;
+.header {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
 }

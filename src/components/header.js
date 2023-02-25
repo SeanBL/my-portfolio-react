@@ -9,12 +9,7 @@ import '../styles/header.css'
 
 export default function Header() {
     return (
-        <header>
-            {/* <Link to='/'>About Me</Link>
-            <Link to='projects'>Projects</Link>
-            <Link to='contact'>Contact</Link>
-            <Link to='resume'>Resume</Link> */}
-
+        <header className="header">
             <Navbar items = {[ 
                 {
                     id: "aboutMe",
