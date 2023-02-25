@@ -1,11 +1,17 @@
 .container {
     display: flex;
-    justify-content: center;
+	flex-direction: row;
+    align-items: center;
+}
+
+.picture {
+	flex: 50%;
 }
 
 .aboutMe {
     color: rgb(255, 255, 255);
     margin: 45px 0px 45px 45px;
+	flex: 50%;
 }
 
 .firstLine {
@@ -18,19 +24,18 @@
 .firstLine:before, .firstLine:after {
     content: "";
     position: absolute;
-	left: -35px;
-	bottom: -5px;
-	background-size: 400%;
+	left: -2px;
+	bottom: -2px;
     background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#0000ff); 
-    background-size: 200%;
-	width: calc(110% + 4px);
-	height: calc(1% + 5px);
+    background-size: 400%;
+	width: 500px;
+	height: calc(1% + 1px);
 	z-index: -1;
 	animation: steam 20s linear infinite;
 }
 
 .firstLine:after {
-	filter: blur(15px);
+	filter: blur(25px);
 }
 
 .aboutLine {
@@ -56,12 +61,14 @@ body {
 
 .block {
 	position: relative;
-	margin: 45px 0px 45px 45px;
+	margin: auto;
+	float: right;
 	width: 410px;
 	height: 550px;
 	/* background: linear-gradient(0deg, #000, #272727); */
     background-image: url('../img/meLuna.JPG');
     background-size: cover;
+	
 }
 
 .block:before, .block:after {
@@ -69,8 +76,7 @@ body {
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-		#0000ff, #00ff00,#ffff00, #ff0000);
+	background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#0000ff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
@@ -91,7 +97,13 @@ body {
 }
 
 .block:after {
-	filter: blur(5px);
+	filter: blur(15px);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
 }
 
   
