@@ -9,10 +9,11 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 
+
 export default function App() {
   return (
     <BrowserRouter>
-      <div className='background'>
+      <div>
         <Header />
         <main>
           <Routes>

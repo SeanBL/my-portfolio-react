@@ -1,12 +1,16 @@
+.font-link {
+    font-family: 'Kalam', cursive;
+}
 .navbar {
-    height: 60px;
+    height: 70px;
     background: transparent;
-    color: rgb(212, 54, 54);
     padding: 15px 5px 15px 5px; 
 }
 
-.navItems {
+.navItems a {
     font-size: 30px;
-    align-content: center;
-    align-items: center;
+    font-family: kalam, cursive;
+    text-decoration: none;
+    margin: 0px 35px 0px 35px;
+    color: white;
 }
