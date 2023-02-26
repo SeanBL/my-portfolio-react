@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/aboutme.css'
-// import profilePic from '../img/me.JPG'
+
 
 
 export default function AboutMe() {
