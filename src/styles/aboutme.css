@@ -26,12 +26,12 @@
     position: absolute;
 	left: -2px;
 	bottom: -2px;
-    background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#0000ff); 
+    background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#4400ff, #8c00ff, #f700ff); 
     background-size: 400%;
 	width: 500px;
 	height: calc(1% + 1px);
 	z-index: -1;
-	animation: steam 20s linear infinite;
+	animation: steam 40s linear infinite;
 }
 
 .firstLine:after {
@@ -76,12 +76,12 @@ body {
 	position: absolute;
 	left: -2px;
 	top: -2px;
-	background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#0000ff);
+	background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff,#4400ff, #8c00ff, #f700ff);
 	background-size: 400%;
 	width: calc(100% + 4px);
 	height: calc(100% + 4px);
 	z-index: -1;
-	animation: steam 20s linear infinite;
+	animation: steam 40s linear infinite;
 }
 
 @keyframes steam {
@@ -97,7 +97,7 @@ body {
 }
 
 .block:after {
-	filter: blur(15px);
+	filter: blur(20px);
 }
 
 @media only screen and (min-width: 360px) and (max-width: 768px) {
