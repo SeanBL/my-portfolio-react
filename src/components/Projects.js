@@ -16,13 +16,76 @@ export default function Projects() {
         setIsHover(false);
     };
 
+    const projects = [
+        {
+            title: "Stability",
+            bgImg: Brain,
+            github: "https://github.com/oriarh/STABILITY",
+            deployed: "https://oriarh.github.io/STABILITY/"
+        },
+        {
+            title: "Happy Helpers",
+            bgImg: Helpers,
+            github: "https://github.com/HawaFallay/Happy-Helper-",
+            deployed: "https://happy-helpers-app.herokuapp.com/"
+        },
+        {
+            title: "Stability",
+            bgImg: Brain,
+            github: "https://github.com/oriarh/STABILITY",
+            deployed: "https://oriarh.github.io/STABILITY/"
+        },
+        {
+            title: "Happy Helpers",
+            bgImg: Helpers,
+            github: "https://github.com/HawaFallay/Happy-Helper-",
+            deployed: "https://happy-helpers-app.herokuapp.com/"
+        },
+        {
+            title: "Stability",
+            bgImg: Brain,
+            github: "https://github.com/oriarh/STABILITY",
+            deployed: "https://oriarh.github.io/STABILITY/"
+        },
+        {
+            title: "Happy Helpers",
+            bgImg: Helpers,
+            github: "https://github.com/HawaFallay/Happy-Helper-",
+            deployed: "https://happy-helpers-app.herokuapp.com/"
+        },
+    ]
+
     return  (
         <section className="pContainer">
             <div className="title">
                 Recent Projects
             </div> 
-            <a href="https://github.com/oriarh/STABILITY" target="_blank">GitHub Link</a>
-            <div className="picContainer1">
+            <div className="projects" style={{display:"flex",flexDirection:"row", flexWrap:"wrap", justifyContent:"center"}}>¨
+                {projects.map(project=> {
+                    /**
+                     * project = {
+                     *   title:"..."
+                     *   bgImg:"..."
+                     * ..
+                     * }
+                     * Destructing is declaring variables by the key names:
+                     */
+                    const {title,bgImg,github,deployed} = project;
+
+                    return (<figure className="project" style={{maxWidth:"25vw", color:"white", textAlign:"center", position:"relative", border:"5px solid red"}}>
+                        <p><b>{title}</b></p>
+                        <img src={bgImg} style={{width:"100%"}}></img>
+                        <figcaption style={{position:"absolute", bottom:"30px", right:"5px", zIndex:5}}>
+                            <a href={github} target="_blank">Github</a>
+                        </figcaption>
+                        <figcaption style={{position:"absolute", bottom:"10px", right:"5px", zIndex:5}}>
+                             <a href={deployed} target="_blank">Demo</a>
+                        </figcaption>
+                    </figure>)
+                })}
+            </div>
+            {/* <div className="picContainer1" style={{position:"relative"}}>
+                <a href="https://github.com/oriarh/STABILITY" target="_blank" style={{position:"absolute",bottom:"10px",right:"5px"}}>GitHub Link</a>
                 <div className="picBorder" 
                         onMouseOver={hovering}
                         onMouseOut={notHovering}>
@@ -39,7 +102,7 @@ export default function Projects() {
                 </div>
                 
             </div>
-            {/* <div className="picContainer2">
+            <div className="picContainer2">
                 <div className="hackBlogPic">
                     <p className="hackBlog">
                         The Hack Blog
