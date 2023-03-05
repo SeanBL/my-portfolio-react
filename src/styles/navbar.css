@@ -5,6 +5,7 @@
     height: 70px;
     background: transparent;
     padding: 15px 5px 15px 5px; 
+    
 }
 
 .navItems a {
@@ -12,9 +13,12 @@
     font-family: kalam, cursive;
     text-decoration: none;
     margin: 0px 35px 0px 35px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
-.active {
-    color: rebeccapurple;
+.header a.active {
+    /* background-color: rgb(201, 107, 255); */
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
