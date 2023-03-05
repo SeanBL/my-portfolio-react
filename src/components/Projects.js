@@ -2,19 +2,22 @@ import React from "react";
 import '../styles/projects.css';
 import Brain from '../img/brain.png';
 import Helpers from '../img/hh1.png';
-import Default from '../img/defaultPic.jpg'
+import Hack from '../img/hackBlog.png';
+import Weather from '../img/weather.png'
+import Smart from '../img/smartStack.png'
+import NoSql from '../img/noSql.png'
 import {useState} from 'react';
 
 export default function Projects() {
-    const [isHover, setIsHover] = useState(false);
+    // const [isHover, setIsHover] = useState(false);
 
-    const hovering = () => {
-        setIsHover(true);
-    };
+    // const hovering = () => {
+    //     setIsHover(true);
+    // };
 
-    const notHovering = () => {
-        setIsHover(false);
-    };
+    // const notHovering = () => {
+    //     setIsHover(false);
+    // };
 
     const projects = [
         {
@@ -30,28 +33,28 @@ export default function Projects() {
             deployed: "https://happy-helpers-app.herokuapp.com/"
         },
         {
-            title: "Stability",
-            bgImg: Brain,
-            github: "https://github.com/oriarh/STABILITY",
-            deployed: "https://oriarh.github.io/STABILITY/"
+            title: "Hack Blog",
+            bgImg: Hack,
+            github: "https://github.com/SeanBL/hack-blog",
+            deployed: "https://hack-blog.herokuapp.com/"
         },
         {
-            title: "Happy Helpers",
-            bgImg: Helpers,
-            github: "https://github.com/HawaFallay/Happy-Helper-",
-            deployed: "https://happy-helpers-app.herokuapp.com/"
+            title: "Weather Forecast",
+            bgImg: Weather,
+            github: "https://github.com/SeanBL/weather-forecast-app",
+            deployed: "https://seanbl.github.io/weather-forecast-app/"
         },
         {
-            title: "Stability",
-            bgImg: Brain,
-            github: "https://github.com/oriarh/STABILITY",
-            deployed: "https://oriarh.github.io/STABILITY/"
+            title: "Smart Stack",
+            bgImg: Smart,
+            github: "https://github.com/oriarh/Smart-Stack",
+            deployed: ""
         },
         {
-            title: "Happy Helpers",
-            bgImg: Helpers,
-            github: "https://github.com/HawaFallay/Happy-Helper-",
-            deployed: "https://happy-helpers-app.herokuapp.com/"
+            title: "NoSQL Database",
+            bgImg: NoSql,
+            github: "https://github.com/SeanBL/social-network-database",
+            deployed: "https://youtu.be/K0M4xUI4yw8"
         },
     ]
 
@@ -60,7 +63,7 @@ export default function Projects() {
             <div className="title">
                 Recent Projects
             </div> 
-            <div className="projects" style={{display:"flex",flexDirection:"row", flexWrap:"wrap", justifyContent:"center"}}>¨
+            <div className="projects">¨
                 {projects.map(project=> {
                     /**
                      * project = {
@@ -72,16 +75,19 @@ export default function Projects() {
                      */
                     const {title,bgImg,github,deployed} = project;
 
-                    return (<figure className="project" style={{maxWidth:"25vw", color:"white", textAlign:"center", position:"relative", border:"5px solid red"}}>
-                        <p><b>{title}</b></p>
-                        <img src={bgImg} style={{width:"100%"}}></img>
-                        <figcaption style={{position:"absolute", bottom:"30px", right:"5px", zIndex:5}}>
-                            <a href={github} target="_blank">Github</a>
-                        </figcaption>
-                        <figcaption style={{position:"absolute", bottom:"10px", right:"5px", zIndex:5}}>
-                             <a href={deployed} target="_blank">Demo</a>
-                        </figcaption>
-                    </figure>)
+                    return (
+                        <figure >
+                            <p><b className="projectTitle">{title}</b></p>
+                            <figure className="project">
+                                <img className="pImg" src={bgImg}></img>
+                                <figcaption className="gLink">
+                                    <a className="linkText" href={github} target="_blank">Github</a>
+                                </figcaption>
+                                <figcaption className="dLink">
+                                    <a className="linkText" href={deployed} target="_blank">Demo</a>
+                                </figcaption>
+                            </figure>
+                        </figure>)
                 })}
             </div>
             {/* <div className="picContainer1" style={{position:"relative"}}>
