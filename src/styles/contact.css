@@ -24,12 +24,17 @@
 }
 
 .sendBtn {
-    width: 12vw;
+    width: 13vw;
     margin: auto;
     margin-top: 10px;
     font-size: 20px;
-    background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff);
+    color: white;
+    padding: 10px;
+    background: linear-gradient(45deg, #1100fb, #0044ff);
     border-radius: 5px;
 }
 
+.error {
+    color: #fb0000;
+}
 
