@@ -1,3 +1,35 @@
 .formContainer {
     display: flex;
+    flex-direction: column;
 }
+
+.contactTitle {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto;
+}
+
+.formItem {
+    padding: 3px;
+    font-size: 18px;
+}
+
+.sendBtn {
+    width: 12vw;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    background: linear-gradient(45deg, #1100fb, #0044ff, #00b7ff);
+    border-radius: 5px;
+}
+
+
