@@ -22,3 +22,10 @@
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+	.navbar {
+        display: flex;
+		flex-direction: column;
+	}
+}
