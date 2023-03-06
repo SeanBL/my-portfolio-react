@@ -104,6 +104,17 @@ body {
 	.container {
 		flex-direction: column;
 	}
+
+	.picture {
+		margin-top: 30px;
+	}
+
+	.aboutBody {
+		margin: auto;
+		width: 70vw;
+		margin-bottom: 10px;
+	}
+	
 }
 
   

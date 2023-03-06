@@ -1,11 +1,16 @@
 .header {
     display: flex;
+    flex-direction: row;
     height: 150px;
     align-items: center;
     justify-content: center; 
-    background-color: black;
+    background-color: transparent;
 }
 
-/* .header a.active {
-    background-color: rgb(110, 156, 255);
-} */
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+	.header {
+        display: flex;
+		flex-direction: column;
+        height: 350px;
+	}
+}
