@@ -14,7 +14,7 @@
 - [Questions](#questions)
 
 ## Installation
-No installation is required to view the webpage. Here is a link to the deployed website: https://seanbl.github.io/
+No installation is required to view the webpage. Give it a moment to load. Here is a link to the deployed website: https://seanbl.github.io/my-portfolio-react/
 
 ## Usage
 The following image shows the web application's appearance and functionality:
