@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <BrowserRouter>
-      <div>
+      <div className='background'>
         <Header />
         <main>
           <Routes>

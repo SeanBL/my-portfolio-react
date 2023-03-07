@@ -90,37 +90,6 @@ export default function Projects() {
                         </figure>)
                 })}
             </div>
-            {/* <div className="picContainer1" style={{position:"relative"}}>
-                <a href="https://github.com/oriarh/STABILITY" target="_blank" style={{position:"absolute",bottom:"10px",right:"5px"}}>GitHub Link</a>
-                <div className="picBorder" 
-                        onMouseOver={hovering}
-                        onMouseOut={notHovering}>
-                    <img className="stabilityPic" src={Brain} alt="brain"/>
-                </div>
-                {isHover && (
-                    <div className="stabilityGLink">
-                        <a href="https://github.com/oriarh/STABILITY" target="_blank">GitHub Link</a>
-                    </div>
-                )}
-
-                <div>
-                    <img className="hhPic" src={Helpers} alt="Happy Helpers App Login Page"/>
-                </div>
-                
-            </div>
-            <div className="picContainer2">
-                <div className="hackBlogPic">
-                    <p className="hackBlog">
-                        The Hack Blog
-                    </p>
-                </div>
-                <div className="defaultPic">
-                    <p className="finalProject">(temp place holder)</p>
-                </div> 
-            </div> */}
-            
-                
-            
         </section>
     )
 };

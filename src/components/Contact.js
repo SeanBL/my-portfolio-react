@@ -65,9 +65,7 @@ export default function Contact() {
                     </div>
                     <button className="sendBtn" type="submit">Send Message</button>
                 </form>
-            </div>
-            
-            
+            </div> 
         </section>
     );
 };
