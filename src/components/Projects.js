@@ -48,7 +48,7 @@ export default function Projects() {
             title: "Smart Stack",
             bgImg: Smart,
             github: "https://github.com/oriarh/Smart-Stack",
-            deployed: ""
+            deployed: "https://smart-stack.herokuapp.com/"
         },
         {
             title: "NoSQL Database",
