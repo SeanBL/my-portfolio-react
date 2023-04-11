@@ -1,12 +1,13 @@
 import React from "react";
 import '../styles/resume.css';
+import resume from "../img/2023resume.pdf"
 
 export default function Resume() {
     return (
         <section>
             <div className="resumeContainer">
-                <a href="resume.pdf"
-                    download="resume.pdf">
+                <a href={resume}
+                    download>
                     <button className="downloadBtn">Download Resume</button>
                 </a>
                 <div className="proficiencies">
