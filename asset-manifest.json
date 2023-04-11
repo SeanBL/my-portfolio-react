@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio-react/static/css/main.667c3d6a.css",
-    "main.js": "/my-portfolio-react/static/js/main.c68f8cde.js",
+    "main.js": "/my-portfolio-react/static/js/main.799d0a1d.js",
     "static/js/787.fe039db8.chunk.js": "/my-portfolio-react/static/js/787.fe039db8.chunk.js",
     "static/media/noSql.png": "/my-portfolio-react/static/media/noSql.702734b8e5fd02225adc.png",
     "static/media/weather.png": "/my-portfolio-react/static/media/weather.771b48a79fd34250b683.png",
@@ -10,13 +10,14 @@
     "static/media/hackBlog.png": "/my-portfolio-react/static/media/hackBlog.b9771bbe1513bfc527d8.png",
     "static/media/smartStack.png": "/my-portfolio-react/static/media/smartStack.614cbd6edaee5e016676.png",
     "static/media/meLuna.JPG": "/my-portfolio-react/static/media/meLuna.873cd0999b03a786b5ad.JPG",
+    "static/media/2023resume.pdf": "/my-portfolio-react/static/media/2023resume.0bb601b42dd1185a74e2.pdf",
     "index.html": "/my-portfolio-react/index.html",
     "main.667c3d6a.css.map": "/my-portfolio-react/static/css/main.667c3d6a.css.map",
-    "main.c68f8cde.js.map": "/my-portfolio-react/static/js/main.c68f8cde.js.map",
+    "main.799d0a1d.js.map": "/my-portfolio-react/static/js/main.799d0a1d.js.map",
     "787.fe039db8.chunk.js.map": "/my-portfolio-react/static/js/787.fe039db8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.667c3d6a.css",
-    "static/js/main.c68f8cde.js"
+    "static/js/main.799d0a1d.js"
   ]
 }
