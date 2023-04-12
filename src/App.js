@@ -17,10 +17,11 @@ export default function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<AboutMe />}/>
-            <Route path="projects" element={<Projects />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="resume" element={<Resume />} />
+            <Route path="/my-portfolio-react" element={<AboutMe />}/>
+            <Route path='/' element={<AboutMe />}/>
+            <Route path="Projects" element={<Projects />} />
+            <Route path="Contact" element={<Contact />} />
+            <Route path="Resume" element={<Resume />} />
           </Routes>
         </main>
         <Footer />

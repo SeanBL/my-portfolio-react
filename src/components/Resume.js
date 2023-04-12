@@ -6,8 +6,7 @@ export default function Resume() {
     return (
         <section>
             <div className="resumeContainer">
-                <a href={resume}
-                    download>
+                <a href={resume} download>
                     <button className="downloadBtn">Download Resume</button>
                 </a>
                 <div className="proficiencies">

@@ -1,20 +1,23 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { IconContext } from "react-icons";
+import { FaGithub } from "react-icons/fa";
+import { FaTwitch } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import '../styles/footer.css';
 
 export default function Footer() {
 
     const footerLinks = [
         {
-            title: "Linked In",
+            title: <FaLinkedin />,
             link: "https://www.linkedin.com/in/sean-bristol-lee-74001020/"
         },
         {
-            title: "Github",
+            title: <FaGithub />,
             link: "https://github.com/SeanBL"
         },
         {
-            title: "Twitch",
+            title: <FaTwitch />,
             link: "https://www.twitch.tv/c6_mafia"
         }
     ]
@@ -26,8 +29,10 @@ export default function Footer() {
                     const { title, link } = footerLink;
                 
                     return (
+                        <IconContext.Provider value={{ color: "white", size: "50px", className: "links"}}>
+                            <a className="link" href={link} target="_blank">{title}</a>
+                        </IconContext.Provider>
                         
-                        <a className="link" href={link} target="_blank">{title}</a>
                     )
                 })}
             </div>
